@@ -252,4 +252,11 @@ typedefs.key = Schema.define {
 }
 
 
+typedefs.layer = Schema.define {
+  type = "string",
+  default = "outer",
+  one_of = { "outer", "inner", "any" },
+}
+
+
 return typedefs
